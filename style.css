@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root {
+    --nav-bar-color: #0000004d;
+    --header-back-color: #616161;
+    --btn-back-color: #FFD700;
+    --btn-font-color: #000000;
+    --header-font-color: #ffffff;
+    --about-font-color: #000000;
+    --footer-font-color: #ffffff;
+    --footer-back-color: #3a3a3a;
+    --footer-button-back-color: var(--btn-back-color);
+    --card-p-color: #353535;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #000000;
+}
+
+
+nav {
+    background-color: var(--nav-bar-color);
+    
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    transition: all 0.3 ease-in-out;
+}
+
+header {
+    background-color: var(--header-back-color);
+    height: 900px;
+    /* position: relative; */
+    color: var(--header-font-color);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/img/tenweb_media_rlb5ebjdj.webp") center/cover no-repeat;
+    /* background-attachment: fixed; */
+
+}
+
+nav .logo {
+    color: var(--header-font-color);
+    font-size: 48px;
+    font-family: "Anton", sans-serif;
+}
+
+main article {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+
+p, h1, h2 {
+    font-family: "Prompt", sans-serif;
+    letter-spacing: 0.5px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #cfb000;
+}
+
+.header-text {
+    font-size: 48px;
+    font-family: "Anton", sans-serif;
+}
+
+.primary-text {
+    font-family: "Anton", sans-serif;
+}
+
+.header-paragraph {
+    font-size: 23px;
+}
+
+.about-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.about-header h2 {
+    margin-top: 60px;
+    font-size: 42px;
+}
+
+.about-header h3 {
+    color: var(--card-p-color);
+}
+
+.card-holder {
+    display: flex;
+    align-self: center;
+    margin: 100px;
+    margin-top: 120px;
+    gap: 100px;
+}
+
+.card {
+    max-width: 400px;
+    text-align: center;
+}
+
+
+
+.card img {
+    margin-bottom: 20px;
+}
+
+.card h2 {
+    font-size: 36px;
+}
+
+.card p {
+    color: var(--card-p-color);
+    line-height: 20px;
+}
+
+.flex-container {
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    line-height: 20px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.flex-container h3 {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 28px;
+    
+}
+
+.flex-container p {
+    max-width: 250px;
+}
+
+.flex-images {
+    display: flex;
+    align-self: center;
+    gap: 20px;
+}
+
+.flex-images img{
+    width: 250px;
+    border-radius: 5px;
+}
+
+input {
+    /* height: 36px;
+    width: 300px; */
+    height: 50px;
+    padding-right: 150px;
+    padding-left: 20px;
+    margin-right: 20px;
+    border-radius: 5px;
+    border: 0;
+}
+
+button {
+    padding: 17px;
+    width: 100px;
+    background-color: var(--btn-back-color);
+    border: 0;
+    border-radius: 5px;
+}
+
+.logo-img {
+    width: 10vh;
+    margin: 10px;
+    box-shadow: 0 0 10px 5px black;
+    border-radius: 55%;
+}
+
+#logo-nav {
+    text-shadow: 0 0 10px black;
+    color: white;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    width: 60vh;
+    position: absolute;
+    top: 20vh;
+    left: 30vh;
+}
+
+footer {
+    background-color: var(--footer-back-color);
+    color: var(--footer-font-color);
+
+}
+
+.footer-header {
+    text-align: left;
+    padding: 55px;
+    align-self: flex-start;
+}
+
+.footer-header h2 {
+    font-size: 46px;
+}
+
+.footer-header p {
+    font-size: 20px;
+    /* margin: 20px; */
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.video-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.video-card video {
+    width: auto;
+    height: 60vh;
+    border-radius: 0;
+    transition: all 0.3s ease;
+}
+
+.video-card video:hover {
+    height: 70vh;
+}
+.footer-header button {
+    background-color: transparent;
+    border: 1px solid var(--btn-back-color);
+    color: var(--btn-back-color);
+    padding: 0;
+    padding-right: 10px;
+    padding-left: 10px;
+    width: 150px;
+    height: 50px;
+    font-size: 18px;
+    font-weight: 100;
+    letter-spacing: 3px;
+}
+
+.footer-header button:hover {
+    background-color: var(--btn-back-color);
+    color: var(--btn-font-color);
+}
+
+.flex-videos {
+    display: flex;
+    flex-direction: row;
+    align-self: flex-end;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px;
+    margin-bottom: 15%;
+}
+
+.grid-header {
+    text-align: center;
+    line-height: 50px;
+}
+
+.grid-header h2{
+    font-size: 46px;
+}
+
+.grid-header p {
+    font-size: 26px;
+}
+
+.grid-container-img {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    width: 50%;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+.grid-container-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+}
+
+/* Первая картинка — большая, занимает 2 строки и 1 колонку */
+.grid-container-img .large {
+    grid-row: 1 / span 2;
+    grid-column: 1 / 2;
+}
+
+
+
+
+
+
+
