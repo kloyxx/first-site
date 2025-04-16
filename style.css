@@ -42,7 +42,7 @@ header {
     /* position: relative; */
     color: var(--header-font-color);
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("/img/tenweb_media_rlb5ebjdj.webp") center/cover no-repeat;
+    url("/img/tenweb_media_rlb5ebjdj.jpg") center/cover no-repeat;
     /* background-attachment: fixed; */
 
 }
