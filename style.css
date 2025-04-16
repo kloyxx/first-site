@@ -41,10 +41,17 @@ header {
     height: 900px;
     /* position: relative; */
     color: var(--header-font-color);
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("/img/tenweb_media_rlb5ebjdj.jpg") center/cover no-repeat;
+    /* background: 
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/img/header.jpg") center center / cover no-repeat; */
     /* background-attachment: fixed; */
-
+    background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("img/header.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  
 }
 
 nav .logo {
@@ -414,7 +421,6 @@ footer {
     font-size: 16px;
   }
 }
-
 
 
 
