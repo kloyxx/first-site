@@ -321,6 +321,7 @@ footer {
     flex-direction: column;
     gap: 10px;
     padding: 10px;
+    position: fixed;
   }
 
   .header-container {
